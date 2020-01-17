@@ -1,6 +1,7 @@
 import React from 'react';
 import './styles.css';
 
+
 // import { Container } from './styles';
 
 export default function DevItem({ dev }) {
@@ -17,8 +18,8 @@ export default function DevItem({ dev }) {
             <p>{dev.bio}</p>
             <>
                 <a href={`https://github.com/${dev.github_username}`}>Acessar Perfil Github </a>
-                <button className="user-edit btn-form">Edit</button>
-                <button className="user-remove btn-form">Remove</button>
+                <button className="fa fa-edit btn-form"></button>
+                <button className="fa fa-trash btn-form"></button>
             </>
         </li>
     );
