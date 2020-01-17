@@ -43,8 +43,10 @@ li.dev-item a:hover {
 .btn-form {
   background-color: white;
   margin-bottom: 5px;
+  margin-left: 5px;
   border: none;
   color: RoyalBlue;
+  opacity: 0.2;
   padding: 6px 6px;
   font-size: 24px;
   cursor: grab;
@@ -52,6 +54,6 @@ li.dev-item a:hover {
 }
 
 /* Darker background on mouse-over */
-.btn-form:hover {
+.btn-form-a:hover {
   background-color: rgb(125, 182, 235);
 }
