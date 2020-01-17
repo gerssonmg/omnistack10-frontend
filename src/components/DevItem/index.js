@@ -15,7 +15,11 @@ export default function DevItem({ dev }) {
                 </div>
             </header>
             <p>{dev.bio}</p>
-            <a href={`https://github.com/${dev.github_username}`}>Acessar Perfil Github </a>
+            <>
+                <a href={`https://github.com/${dev.github_username}`}>Acessar Perfil Github </a>
+                <button className="user-edit btn-form">Edit</button>
+                <button className="user-remove btn-form">Remove</button>
+            </>
         </li>
     );
 }

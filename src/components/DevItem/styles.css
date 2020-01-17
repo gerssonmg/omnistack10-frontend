@@ -37,3 +37,8 @@ li.dev-item a {
 li.dev-item a:hover {
   color: #5a2ea6;
 }
+
+.btn-form {
+  margin-left: 8px;
+  background-color: #8e4dff;
+}
