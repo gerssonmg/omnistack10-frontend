@@ -17,6 +17,7 @@ import DevItem from './components/DevItem/index';
 function App() {
 
   const [devs, setDevs] = useState([]);
+  const [updateChildren, setUpdatechildren] = useState(true);
 
   useEffect(() => {
     async function loadDevs() {
@@ -26,7 +27,12 @@ function App() {
     }
 
     loadDevs();
-  }, []);
+  }, [updateChildren]);
+
+  async function func_updateChildren() {
+    let inverserChildren = !updateChildren
+    await setUpdatechildren(!updateChildren);
+  }
 
   async function handleAddDev(data) {
 
@@ -46,7 +52,7 @@ function App() {
       <main>
         <ul>
           {devs.map(dev => (
-            <DevItem key={dev._id} dev={dev} />
+            <DevItem key={dev._id} dev={dev} onClick={() => func_updateChildren()} />
           ))}
         </ul>
       </main>
